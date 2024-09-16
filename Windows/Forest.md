@@ -1,4 +1,4 @@
-###### tags: `Hack the box` `HTB` `Easy`
+###### tags: `Hack the box` `HTB` `Easy` `Windows`
 
 # Forest
 ```

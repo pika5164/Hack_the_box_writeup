@@ -1,4 +1,4 @@
-###### tags: `Hack the box` `HTB` `Medium`
+###### tags: `Hack the box` `HTB` `Medium` `Windows`
 
 # Escape
 ```
