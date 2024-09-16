@@ -1,9 +1,3 @@
----
-title: README
-tags: [Hack the box, HTB, Windows, Linux]
-
----
-
 ###### tags: `Hack the box` `HTB` `Windows` `Linux`
 
 # Hack_the_box_writeup
