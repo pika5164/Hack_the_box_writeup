@@ -12,7 +12,9 @@ tags: [Hack the box, HTB, Windows, Linux]
 
 ### Easy
 [Broker](/jaoYxE9dRQ61WdUWpco5yA)
+
 [Pandora](/ZdyddJLgTQeo1DrDOa61ew)
+
 [Busqueda](/XpzFuXhQTJWEfDshRwxJow)
 
 ### Medium
@@ -25,8 +27,11 @@ tags: [Hack the box, HTB, Windows, Linux]
 
 ### Easy
 [Active](/KeiN5upZSgyyd7bLA2wIPQ)
+
 [Forest](/xViEvQStRXKgf87hmOwIGA)
+
 [ServMon](/6kw6XJUsTSagwLH8DcRPfw)
+
 [Support](/xrtN_fG8RuuX_lyBOu8Dnw)
 
 ### Medium
