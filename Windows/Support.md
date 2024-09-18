@@ -129,7 +129,7 @@ nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
 ![Support_2.png](picture/Support_2.png)
 
 針對`support`這個user查看`domain_user.json`
-```
+```json
 # 搜尋CN=support
 
 "attributes": {
@@ -202,9 +202,11 @@ nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
 
 點`OUTBOUND OBJECT CONTROL` -> `Group Delegated Object Control`
 
-![image](https://hackmd.io/_uploads/rkpj9-vV0.png)
+![Support_4.png](picture/Support_4.png)
 
-發現`support`這個user是`Shared support account`這個群組的，然後又對`DC.SUPPORT.HTB`是`GenericAll`的權限，可以用[rbcd-attack](https://github.com/tothi/rbcd-attack?source=post_page-----50c25c5a23c5--------------------------------)
+發現`support`這個user是`Shared support account`這個群組的，然後又對`DC.SUPPORT.HTB`是`GenericAll`的權限，右鍵點`help`，可以用[rbcd-attack](https://github.com/tothi/rbcd-attack?source=post_page-----50c25c5a23c5--------------------------------)
+
+![Support_5.png](picture/Support_5.png)
 
 先add一台computer，查看有加入
 ```
