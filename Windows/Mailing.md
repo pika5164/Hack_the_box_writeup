@@ -1,6 +1,7 @@
 ###### tags: `Hack the box` `HTB` `Easy` `Windows`
 
-# Mailing (ntlm hash感覺壞掉了)
+# Mailing
+// ntlm hash感覺壞掉了
 ```
 ┌──(kali㉿kali)-[~/htb]
 └─$ rustscan -a 10.129.198.182 -u 5000 -t 8000 --scripts -- -n -Pn -sVC
