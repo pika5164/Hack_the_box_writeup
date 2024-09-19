@@ -27,7 +27,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 他在`http://10.129.27.6/`的頁面裡面有一個`Xh4H`，去google可ˇ找到他的[github](https://github.com/Xh4H)，他說有`backdoor`，在`respository`裡面搜尋shell可以找到[Web-Shells](https://github.com/Xh4H/Web-Shells)
 
-![NTraceBack_1.png](picture/TraceBack_1.png)
+![TraceBack_1.png](picture/TraceBack_1.png)
 
 一個一個try看能不能中，果然中了`http://10.129.27.6/smevk.php`，點開裡面的[code](https://github.com/Xh4H/Web-Shells/blob/master/smevk.php)發現是用`admin/admin`登入
 
