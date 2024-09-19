@@ -1,6 +1,6 @@
 ###### tags: `Hack the box` `HTB` `Easy` `Linux`
 
-## Traverxec
+# Traverxec
 ```
 ┌──(kali㉿kali)-[~/htb]
 └─$ rustscan -a 10.129.27.9 -u 5000 -t 8000 --scripts -- -n -Pn -sVC
