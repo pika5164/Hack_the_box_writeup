@@ -6,6 +6,8 @@
 
 ### Easy
 
+[Academy](Linux/Academy.md)
+
 [Bank](Linux/Bank.md)
 
 [Bashed](Linux/Bashed.md)
@@ -15,6 +17,8 @@
 [Broker](Linux/Broker.md)
 
 [BoardLight](Linux/BoardLight.md)
+
+[BountyHunter](Linux/BountyHunter.md)
 
 [Busqueda](Linux/Busqueda.md)
 
@@ -28,23 +32,37 @@
 
 [Headless](Linux/Headless.md)
 
+[Inject](Linux/Inject.md)
+
 [Knife](Linux/Knife.md)
 
 [Mirai](Linux/Mirai.md)
 
 [Nibbles](Linux/Nibbles.md)
 
+[OpenAdmin](Linux/OpenAdmin.md)
+
 [Pandora](Linux/Pandora.md)
 
 [Paper](Linux/Paper.md)
 
+[Photobomb](Linux/Photobomb.md)
+
 [Precious](Linux/Precious.md)
+
+[Previse](Linux/Previse.md)
 
 [RedPanda](Linux/RedPanda.md)
 
 [Sea](Linux/Sea.md)
 
 [Shocker](Linux/Shocker.md)
+
+[TraceBack](Linux/TraceBack.md)
+
+[Traverxec](Linux/Traverxec.md)
+
+[TwoMillion](Linux/TwoMillion.md)
 
 [Validation](Linux/Validation.md)
 
