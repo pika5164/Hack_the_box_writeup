@@ -86,7 +86,7 @@
 
 [Forest](Windows/Forest.md)
 
-[Mailing (ntlm hash感覺壞掉了)](Windows/Mailing.md)
+[Mailing](Windows/Mailing.md)
 
 [ServMon](Windows/ServMon.md)
 
