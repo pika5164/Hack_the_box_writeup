@@ -6,7 +6,11 @@
 
 ### Easy
 
+[Bank](Linux/Bank.md)
+
 [Bashed](Linux/Bashed.md)
+
+[Beep](Linux/Beep.md)
 
 [Broker](Linux/Broker.md)
 
@@ -14,18 +18,35 @@
 
 [Busqueda](Linux/Busqueda.md)
 
+[Blocky](Linux/Blocky.md)
+
 [Cap](Linux/Cap.md)
+
+[Editorial](Linux/Editorial.md)
 
 [GreenHorn](Linux/GreenHorn.md)
 
-[Pandora](Linux/Pandora.md)
+[Headless](Linux/Headless.md)
+
+[Knife](Linux/Knife.md)
 
 [Mirai](Linux/Mirai.md)
 
 [Nibbles](Linux/Nibbles.md)
 
+[Pandora](Linux/Pandora.md)
+
+[Paper](Linux/Paper.md)
+
+[Precious](Linux/Precious.md)
+
+[RedPanda](Linux/RedPanda.md)
+
+[Sea](Linux/Sea.md)
+
 [Shocker](Linux/Shocker.md)
 
+[Validation](Linux/Validation.md)
 
 ### Medium
 
@@ -40,7 +61,10 @@
 ## Windows
 
 ### Easy
+
 [Active](Windows/Active.md)
+
+[Buff](Windows/Buff.md)
 
 [Forest](Windows/Forest.md)
 
@@ -56,8 +80,19 @@
 
 [Intelligence](Windows/Intelligence.md)
 
+[Resolute](Windows/Resolute.md)
+
+[SolarLab](Windows/Solarlab.md)
+
 ### Hard
 
 [Blackfield](Windows/Blackfield.md)
 
 [Flight](Windows/Flight.md)
+
+
+## OpenBSD 
+
+### Easy
+
+[Sense](OpenBSD/Sense.md)
