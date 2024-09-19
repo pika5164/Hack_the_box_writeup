@@ -1,76 +1,77 @@
 ###### tags: `Hack the box` `HTB` `Windows` `Linux`
 
 # Hack_the_box_writeup
+[HTB Labs](https://app.hackthebox.com/home)
 
 ## Linux 
 
 ### Easy
 
-[Academy](Linux/Academy.md)
+:penguin:[Academy](Linux/Academy.md)
 
-[Bank](Linux/Bank.md)
+:penguin:[Bank](Linux/Bank.md)
 
-[Bashed](Linux/Bashed.md)
+:penguin:[Bashed](Linux/Bashed.md)
 
-[Beep](Linux/Beep.md)
+:penguin:[Beep](Linux/Beep.md)
 
-[Broker](Linux/Broker.md)
+:penguin:[Broker](Linux/Broker.md)
 
-[BoardLight](Linux/BoardLight.md)
+:penguin:[BoardLight](Linux/BoardLight.md)
 
-[BountyHunter](Linux/BountyHunter.md)
+:penguin:[BountyHunter](Linux/BountyHunter.md)
 
-[Busqueda](Linux/Busqueda.md)
+:penguin:[Busqueda](Linux/Busqueda.md)
 
-[Blocky](Linux/Blocky.md)
+:penguin:[Blocky](Linux/Blocky.md)
 
-[Cap](Linux/Cap.md)
+:penguin:[Cap](Linux/Cap.md)
 
-[Editorial](Linux/Editorial.md)
+:penguin:[Editorial](Linux/Editorial.md)
 
-[GreenHorn](Linux/GreenHorn.md)
+:penguin:[GreenHorn](Linux/GreenHorn.md)
 
-[Headless](Linux/Headless.md)
+:penguin:[Headless](Linux/Headless.md)
 
-[Inject](Linux/Inject.md)
+:penguin:[Inject](Linux/Inject.md)
 
-[Knife](Linux/Knife.md)
+:penguin:[Knife](Linux/Knife.md)
 
-[Mirai](Linux/Mirai.md)
+:penguin:[Mirai](Linux/Mirai.md)
 
-[Nibbles](Linux/Nibbles.md)
+:penguin:[Nibbles](Linux/Nibbles.md)
 
-[OpenAdmin](Linux/OpenAdmin.md)
+:penguin:[OpenAdmin](Linux/OpenAdmin.md)
 
-[Pandora](Linux/Pandora.md)
+:penguin:[Pandora](Linux/Pandora.md)
 
-[Paper](Linux/Paper.md)
+:penguin:[Paper](Linux/Paper.md)
 
-[Photobomb](Linux/Photobomb.md)
+:penguin:[Photobomb](Linux/Photobomb.md)
 
-[Precious](Linux/Precious.md)
+:penguin:[Precious](Linux/Precious.md)
 
-[Previse](Linux/Previse.md)
+:penguin:[Previse](Linux/Previse.md)
 
-[RedPanda](Linux/RedPanda.md)
+:penguin:[RedPanda](Linux/RedPanda.md)
 
-[Sea](Linux/Sea.md)
+:penguin:[Sea](Linux/Sea.md)
 
-[Shocker](Linux/Shocker.md)
+:penguin:[Shocker](Linux/Shocker.md)
 
-[TraceBack](Linux/TraceBack.md)
+:penguin:[TraceBack](Linux/TraceBack.md)
 
-[Traverxec](Linux/Traverxec.md)
+:penguin:[Traverxec](Linux/Traverxec.md)
 
-[TwoMillion](Linux/TwoMillion.md)
+:penguin:[TwoMillion](Linux/TwoMillion.md)
 
-[Validation](Linux/Validation.md)
+:penguin:[Validation](Linux/Validation.md)
 
 ### Medium
 
-[Blurry](Linux/Blurry.md)
+:penguin:[Blurry](Linux/Blurry.md)
 
-[Runner](Linux/Runner.md)
+:penguin:[Runner](Linux/Runner.md)
 
 ### Hard
 
@@ -80,37 +81,37 @@
 
 ### Easy
 
-[Active](Windows/Active.md)
+:computer:[Active](Windows/Active.md)
 
-[Buff](Windows/Buff.md)
+:computer:[Buff](Windows/Buff.md)
 
-[Forest](Windows/Forest.md)
+:computer:[Forest](Windows/Forest.md)
 
-[Mailing](Windows/Mailing.md)
+:computer:[Mailing](Windows/Mailing.md)
 
-[ServMon](Windows/ServMon.md)
+:computer:[ServMon](Windows/ServMon.md)
 
-[Support](Windows/Support.md)
+:computer:[Support](Windows/Support.md)
 
-[Sauna](Windows/Sauna.md)
+:computer:[Sauna](Windows/Sauna.md)
 
 ### Medium
 
-[Intelligence](Windows/Intelligence.md)
+:computer:[Intelligence](Windows/Intelligence.md)
 
-[Resolute](Windows/Resolute.md)
+:computer:[Resolute](Windows/Resolute.md)
 
-[SolarLab](Windows/Solarlab.md)
+:computer:[SolarLab](Windows/Solarlab.md)
 
 ### Hard
 
-[Blackfield](Windows/Blackfield.md)
+:computer:[Blackfield](Windows/Blackfield.md)
 
-[Flight](Windows/Flight.md)
+:computer:[Flight](Windows/Flight.md)
 
 
 ## OpenBSD 
 
 ### Easy
 
-[Sense](OpenBSD/Sense.md)
+:blowfish:[Sense](OpenBSD/Sense.md)
