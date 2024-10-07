@@ -1,6 +1,6 @@
 ###### tags: `Hack the box` `HTB` `Windows` `Linux`
 
-# Hack_the_box_writeup
+# Hack_The_Box_Writeup
 [HTB Labs](https://app.hackthebox.com/home)
 
 ## Linux 
@@ -84,6 +84,8 @@
 :computer:[Active](Windows/Active.md)
 
 :computer:[Buff](Windows/Buff.md)
+
+:computer:[Cicada](Windows/Cicada.md)
 
 :computer:[Forest](Windows/Forest.md)
 
