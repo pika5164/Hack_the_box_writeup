@@ -318,11 +318,11 @@ Database: soccer_db
 Database: soccer_db
 Table: accounts
 [1 entry]
-+------+-------------------+---------------+----------+
-| id   | email             | password      | username |
-+------+-------------------+---------------+----------+
-| 1324 | player@player.htb | PlayerOftheMa | <blank>  |
-+------+-------------------+---------------+----------+
++------+-------------------+----------------------+----------+
+| id   | email             | password             | username |
++------+-------------------+----------------------+----------+
+| 1324 | player@player.htb | PlayerOftheMatch2022 | player   |
++------+-------------------+----------------------+----------+
 ```
 
 切成`player`後可以用剛剛的指令了，找到[GTFOBins](https://gtfobins.github.io/gtfobins/dstat/)
