@@ -325,6 +325,8 @@ Table: accounts
 +------+-------------------+----------------------+----------+
 ```
 
+![Soccer_15.png](picture/Soccer_15.png)
+
 切成`player`後可以用剛剛的指令了，找到[GTFOBins](https://gtfobins.github.io/gtfobins/dstat/)
 ```
 www-data@soccer:/usr/local/bin$ su player
