@@ -59,6 +59,8 @@
 
 :penguin:[Shocker](Linux/Shocker.md)
 
+:penguin:[Soccer](Linux/Soccer.md)
+
 :penguin:[TraceBack](Linux/TraceBack.md)
 
 :penguin:[Traverxec](Linux/Traverxec.md)
