@@ -105,6 +105,8 @@
 
 ### Medium
 
+:computer:[Certified](Windows/Certified.md)
+
 :computer:[Intelligence](Windows/Intelligence.md)
 
 :computer:[Resolute](Windows/Resolute.md)
