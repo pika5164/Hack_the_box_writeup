@@ -27,6 +27,8 @@
 
 :penguin:[Cap](Linux/Cap.md)
 
+:penguin:[Chemistry](Linux/Chemistry.md)
+
 :penguin:[Editorial](Linux/Editorial.md)
 
 :penguin:[GreenHorn](Linux/GreenHorn.md)
