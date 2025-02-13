@@ -111,6 +111,8 @@
 
 :computer:[Sauna](Windows/Sauna.md)
 
+:computer:[Timelapse](Windows/Timelapse.md)
+
 ### Medium
 
 :computer:[Certified](Windows/Certified.md)
