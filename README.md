@@ -65,6 +65,8 @@
 
 :penguin:[Soccer](Linux/Soccer.md)
 
+:penguin:[Shoppy](Linux/Shoppy.md)
+
 :penguin:[TraceBack](Linux/TraceBack.md)
 
 :penguin:[Traverxec](Linux/Traverxec.md)
