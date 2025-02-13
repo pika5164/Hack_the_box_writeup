@@ -59,6 +59,8 @@
 
 :penguin:[Sea](Linux/Sea.md)
 
+:penguin:[Secret](Linux/Secret.md)
+
 :penguin:[Shocker](Linux/Shocker.md)
 
 :penguin:[Soccer](Linux/Soccer.md)
