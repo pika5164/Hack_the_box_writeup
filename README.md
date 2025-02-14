@@ -107,6 +107,8 @@
 
 :computer:[Forest](Windows/Forest.md)
 
+:computer:[Love](Windows/Love.md)
+
 :computer:[Mailing](Windows/Mailing.md)
 
 :computer:[ServMon](Windows/ServMon.md)
