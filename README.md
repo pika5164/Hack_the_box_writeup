@@ -41,6 +41,8 @@
 
 :penguin:[Mirai](Linux/Mirai.md)
 
+:penguin:[MonitorsTwo](Linux/MonitorsTwo.md)
+
 :penguin:[Nibbles](Linux/Nibbles.md)
 
 :penguin:[OpenAdmin](Linux/OpenAdmin.md)
