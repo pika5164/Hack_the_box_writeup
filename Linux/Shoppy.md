@@ -76,6 +76,7 @@ Admin                   [Status: 302, Size: 28, Words: 4, Lines: 1, Duration: 32
 ┌──(kali㉿kali)-[~/htb]
 └─$ ffuf -u http://shoppy.htb/ -H "Host:FUZZ.shoppy.htb" -w /home/kali/SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt -fw 5
 
+mattermost
 ```
 
 加入`/etc/hosts`
