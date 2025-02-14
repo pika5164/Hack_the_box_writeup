@@ -111,6 +111,8 @@
 
 :computer:[Mailing](Windows/Mailing.md)
 
+:computer:[Remote](Windows/Remote.md)
+
 :computer:[ServMon](Windows/ServMon.md)
 
 :computer:[Support](Windows/Support.md)
