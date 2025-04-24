@@ -123,6 +123,8 @@
 
 ### Medium
 
+:computer:[Administrator](Windows/Administrator.md)
+
 :computer:[Certified](Windows/Certified.md)
 
 :computer:[Intelligence](Windows/Intelligence.md)
